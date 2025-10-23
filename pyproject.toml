@@ -17,6 +17,10 @@ classifiers = [
     "Programming Language :: Python :: 3.13",
     "Topic :: Software Development :: Libraries :: Python Modules",
 ]
+dependencies = [
+    "openai-agents>=0.4.1",
+    "python-dotenv>=1.1.1",
+]
 
 [project.urls]
 Homepage = "https://vharish.github.io/agents-sdk-samples/"
