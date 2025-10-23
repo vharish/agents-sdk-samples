@@ -1,0 +1,52 @@
+site_name: agents-sdk-samples
+repo_url: https://github.com/vharish/agents-sdk-samples
+site_url: https://vharish.github.io/agents-sdk-samples
+site_description: A demo project to quickly develop and test out the OpenAI Agents SDK.
+site_author: Harish
+edit_uri: edit/main/docs/
+repo_name: vharish/agents-sdk-samples
+copyright: Maintained by <a href="https://vharish.com">vharish</a>.
+
+nav:
+  - Home: index.md
+  - Modules: modules.md
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: ["src/agents_sdk_samples"]
+theme:
+  name: material
+  feature:
+    tabs: true
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: white
+      accent: deep orange
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: deep orange
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  icon:
+    repo: fontawesome/brands/github
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/vharish/agents-sdk-samples
+    - icon: fontawesome/brands/python
+      link: https://pypi.org/project/agents-sdk-samples
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
